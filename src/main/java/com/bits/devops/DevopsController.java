@@ -17,4 +17,8 @@ public class DevopsController {
     public Devops devops(@PathVariable String name) {
         return devopService.devops(name);
     }
+    @GetMapping("/health")
+    public String health() {
+        return "I am healthy";
+    }
 }
